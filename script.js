@@ -1,11 +1,15 @@
-function toUpper(string) {
-  return string.toUpperCase();
+function calculate() {
+  for (let i = 1; i < 10; i++) {
+    const newResult = `${i} x ${i} = ${i * i}`;
+    console.log(newResult);
+  }
+  console.log("\nFinished!\n");
 }
 
-const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+const calculateBtn = document.querySelector("#calculate");
+const clearBtn = document.querySelector("#clear");
 
-// Apply `toUpper()` to each item in the array using .map()
-const upperCats = cats.map(toUpper);
-
-console.log(upperCats);
-// Output: [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
+calculateBtn.addEventListener("click", calculate);
+clearBtn.addEventListener("click", () => {
+  console.clear(); // Clears the console when Clear button is clicked
+});

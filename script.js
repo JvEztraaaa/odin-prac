@@ -1,10 +1,22 @@
-let styles = ["Jazz", "Blues"];
-console.log(styles);
-styles.push("Rock-n-roll");
-console.log(styles);
-styles[Math.floor((styles.length - 1) / 2)] = "Classics";
-console.log(styles);
-styles.shift();
-console.log(styles);
-styles.unshift("Rap", "Reggae");
-console.log(styles);
+function sumInput() {
+
+  let numbers = [];
+
+  while (true) {
+
+    let value = prompt("A number please?", 0);
+
+    // should we cancel?
+    if (value === "" || value === null || !isFinite(value)) break;
+
+    numbers.push(+value);
+  }
+
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum;
+}
+
+alert( sumInput() );

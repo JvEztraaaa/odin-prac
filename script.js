@@ -1,7 +1,5 @@
+let num;
 
-
-let i = 0;
-while (i < 3) {
-  alert(`number ${i}!`);
-  i++;
-}
+do {
+  num = prompt("Enter a number greater than 100?", 0);
+} while (num <= 100);

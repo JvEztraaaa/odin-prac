@@ -1,7 +1,10 @@
-let matrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-];
-
-alert( matrix[0][1] )
+let styles = ["Jazz", "Blues"];
+console.log(styles);
+styles.push("Rock-n-roll");
+console.log(styles);
+styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+console.log(styles);
+styles.shift();
+console.log(styles);
+styles.unshift("Rap", "Reggae");
+console.log(styles);

@@ -1,9 +1,7 @@
 function sumInput() {
-
   let numbers = [];
 
   while (true) {
-
     let value = prompt("A number please?", 0);
 
     // should we cancel?
@@ -19,4 +17,4 @@ function sumInput() {
   return sum;
 }
 
-alert( sumInput() );
+alert(sumInput());
